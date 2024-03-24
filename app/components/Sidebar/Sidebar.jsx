@@ -1,15 +1,28 @@
 "use client";
 
-import { useState } from "react";
 import myPhoto from "@/public/Images/myPhoto.png";
 import Image from "next/image";
-import Navlink from "../Navlink/Navlink";
+import Navlink from "@/app/components/Navlink.js";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+import { useState } from "react";
+const navLinks = [
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "My Skills", href: "/skills" },
+  { label: "Projects", href: "/projects" },
+  { label: "Blogs", href: "/blogs" },
+  { label: "Contact", href: "/contact" },
+];
 
 const Sidebar = () => {
-  const [isActive, setIsActive] = useState(true);
-  const handleToggle = () => {
-    setIsActive(!isActive);
-  };
+  const pathname = usePathname();
+  const [isActive,setIsActive] = useState(true)
+
+  const handleToggle = ()=> {
+    setIsActive(!isActive)
+  }
+
   return (
     <>
       {/* sidebar */}
@@ -34,12 +47,20 @@ const Sidebar = () => {
 
         <div className="flex flex-col ">
           <nav className="text-center ">
-            <Navlink href={"/"}>Home</Navlink>
-            <Navlink href={"/about"}>About</Navlink>
-            <Navlink href={"/skills"}>My Skills</Navlink>
-            <Navlink href={"/projects"}>Projects</Navlink>
-            <Navlink href={"/blogs"}>Blogs</Navlink>
-            <Navlink href={"/contact"}>Contact</Navlink>
+            {navLinks.map((link, i) => {
+              const active = pathname===(link.href);
+              return (
+                <Link
+                  key={i}
+                  href={link.href}
+                  className={`flex justify-center px-4 py-2 my-1 uppercase transition-colors duration-300 transform hover:bg-[#F31559] hover:text-white ${
+                    active && "bg-[#F31559] text-white"
+                  }`}
+                >
+                  {link.label}
+                </Link>
+              );
+            })}
           </nav>
         </div>
         <div>

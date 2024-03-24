@@ -1,3 +1,4 @@
+import MyBtn from "./components/MyBtn/MyBtn";
 import TypingAnimation from "./components/TypeAnimation/TypeAnimation";
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         about the exciting possibilities in the world of web development.Whether you're a fellow developer, potential collaborator, or someone
         with a shared passion for innovation, I'd love to connect.`}
           </p>
+          <MyBtn text={'Download Resume'}/>
         </div>
       </div>
     </>
