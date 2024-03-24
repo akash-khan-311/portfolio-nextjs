@@ -1,17 +1,13 @@
+
+
 import Link from "next/link";
-import { useRouter } from "next/router";
 
-
-const Navlink = ({href,children}) => {
-    const router = useRouter()
-    const isActive = router.pathname === href
-    return (
-        <>
-            <Link href={href}>
-                <a className={isActive && 'active'}>{children}</a>
-            </Link>
-        </>
-    );
+const Navlink = ({ href, children }) => {
+  return (
+    <Link href={href} className="flex justify-center px-4  py-2 my-1 uppercase  transition-colors duration-300 transform hover:bg-[#f3155852]  hover:text-white">
+      {children}
+    </Link>
+  );
 };
 
 export default Navlink;
