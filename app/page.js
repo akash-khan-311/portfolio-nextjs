@@ -1,8 +1,10 @@
 import MyBtn from "./components/MyBtn/MyBtn";
+import ParticlesBg from "./components/ParticlesBg/ParticlesBg";
 import TypingAnimation from "./components/TypeAnimation/TypeAnimation";
 export default function Home() {
   return (
     <>
+   <ParticlesBg/>
       <div className="text-center min-h-[90vh] flex flex-col justify-center items-center max-w-4xl mx-auto space-y-4 ">
         <h2 className="text-black dark:text-white text-6xl lg:text-7xl font-semibold">
           {"Hi, I'm "}
