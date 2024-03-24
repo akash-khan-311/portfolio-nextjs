@@ -53,7 +53,7 @@ const Sidebar = () => {
                 <Link
                   key={i}
                   href={link.href}
-                  className={`flex justify-center px-4 py-2 my-1 uppercase transition-colors duration-300 transform hover:bg-[#F31559] hover:text-white ${
+                  className={`flex justify-center px-4 py-2 my-1 dark:text-white uppercase transition-colors duration-300 transform hover:bg-[#F31559] hover:text-white ${
                     active && "bg-[#F31559] text-white"
                   }`}
                 >

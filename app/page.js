@@ -8,13 +8,13 @@ export default function Home() {
           {"Hi, I'm "}
           <TypingAnimation/>
         </h2>
-        <div className="text-center flex flex-col justify-center text-black dark:text-gray-400 text-xl">
-          <p className="">
+        <div className="text-center flex flex-col justify-center text-black dark:text-gray-400 text-xl ">
+          <p className="mb-3">
             {`I'm always open to new opportunities, collaborations, and discussions
         about the exciting possibilities in the world of web development.Whether you're a fellow developer, potential collaborator, or someone
         with a shared passion for innovation, I'd love to connect.`}
           </p>
-          <MyBtn text={'Download Resume'}/>
+          <MyBtn text={'Download Resume'} url={'https://drive.google.com/file/d/1LLF9oi7djADx4qeEHxS6S6wktKJcCeKL/view?usp=drive_link'}/>
         </div>
       </div>
     </>
