@@ -4,13 +4,14 @@ import MyBtn from "../components/MyBtn/MyBtn";
 import Image from "next/image";
 import myPhoto from "@/public/Images/me.jpg";
 import PageTitle from "../components/PageTitle/PageTitle";
+import ServiceCard from "../components/ServiceCard/ServiceCard";
 
 const About = async () => {
   const data = await fetch(
     "https://raw.githubusercontent.com/akash-khan-311/my-portfolio/main/public/data.json"
   );
   const services = await data.json();
-  console.log(services);
+  
   return (
     <>
       <section>
@@ -74,6 +75,15 @@ const About = async () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+        {/* Services */}
+        <section>
+        <PageTitle title={"services"} />
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-32 ">
+          {services.map((service) => (
+            <ServiceCard key={service.id} service={service} />
+          ))}
         </div>
       </section>
     </>

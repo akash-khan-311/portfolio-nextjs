@@ -2,6 +2,7 @@ import { Nunito } from "next/font/google";
 import "./globals.css";
 import Sidebar from "./components/Sidebar/Sidebar";
 import DarkMode from "./components/DarkModeSwitch/DarkModeSwitch";
+import Animation from "./components/Animation/Animation";
 const inter = Nunito({ subsets: ["latin"] });
 
 export const metadata = {
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
         <main className="relative min-h-screen md:flex">
           {/* Sidebar */}
           <Sidebar />
+          <Animation/>
           {/*  */}
           <div className="flex-1 xl:ml-64 bg-[#e9e9fc] dark:bg-[#10121A]  duration-300 overflow-x-hidden overflow-y-hidden">
             <div className=" container mx-auto  xl:p-20 lg:p-10 md:p-8 p-5  ">
