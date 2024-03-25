@@ -9,8 +9,8 @@ const ContactInfo = ({ title, subTitle, icon: Icon }) => {
             {title}
           </h4>
           <p className="text-sm md:text-lg lg:text-xl   text-black dark:text-gray-400">
-            {" "}
-            {subTitle}{" "}
+           
+            {subTitle}
           </p>
         </div>
       </div>
