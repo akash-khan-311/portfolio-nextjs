@@ -24,7 +24,7 @@ const Contact = () => {
               {/* Name Field */}
               <div className="relative w-full min-w-[200px] h-10 my-14">
                 <input
-                required
+                  required
                   type="text"
                   name="name"
                   className="peer w-full h-full bg-transparent text-gray-700 dark:text-gray-200 font-sans font-normal outline outline-0 focus:outline-0 disabled:bg-gray-50 disabled:border-0 transition-all placeholder-shown:border placeholder-shown:border-gray-200 placeholder-shown:border-t-gray-200 border focus:border-2 border-t-transparent focus:border-t-transparent text-lg px-3 py-6 rounded-[7px] border-gray-200 focus:border-[#F31559]"
@@ -37,7 +37,7 @@ const Contact = () => {
               {/* Email Field */}
               <div className="relative w-full min-w-[200px] h-10 my-14">
                 <input
-                required
+                  required
                   type="email"
                   name="email"
                   className="peer w-full h-full bg-transparent text-gray-700 dark:text-gray-200 font-sans font-normal outline outline-0 focus:outline-0 disabled:bg-gray-50 disabled:border-0 transition-all placeholder-shown:border placeholder-shown:border-gray-200 placeholder-shown:border-t-gray-200 border focus:border-2 border-t-transparent focus:border-t-transparent text-lg px-3 py-6 rounded-[7px] border-gray-200 focus:border-[#F31559]"
@@ -50,7 +50,7 @@ const Contact = () => {
               {/* Subject Field */}
               <div className="relative w-full min-w-[200px] h-10 my-14">
                 <input
-                required
+                  required
                   type="text"
                   name="subject"
                   className="peer w-full h-full bg-transparent text-gray-700 dark:text-gray-200 font-sans font-normal outline outline-0 focus:outline-0 disabled:bg-gray-50 disabled:border-0 transition-all placeholder-shown:border placeholder-shown:border-gray-200 placeholder-shown:border-t-gray-200 border focus:border-2 border-t-transparent focus:border-t-transparent text-lg px-3 py-6 rounded-[7px] border-gray-200 focus:border-[#F31559]"

@@ -11,11 +11,11 @@ const About = async () => {
     "https://raw.githubusercontent.com/akash-khan-311/my-portfolio/main/public/data.json"
   );
   const services = await data.json();
-  
+
   return (
     <>
       <section>
-        <PageTitle title={'About'}/> 
+        <PageTitle title={"About"} />
         <div className="min-h-screen flex justify-center items-center">
           <div className="text-gray-600 body-font">
             <div className="  flex  py-10 lg:flex-row flex-col items-start">
@@ -77,8 +77,8 @@ const About = async () => {
           </div>
         </div>
       </section>
-        {/* Services */}
-        <section>
+      {/* Services */}
+      <section>
         <PageTitle title={"services"} />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-32 ">
           {services.map((service) => (
